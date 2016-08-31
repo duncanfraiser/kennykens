@@ -10,14 +10,19 @@
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 <style>
   .container {
-      padding: 30px 120px;
+      padding: 30px 10px;
   }
   .cirImg {
-      border: 10px solid transparent;
+/*      border: 10px solid transparent;
       margin-bottom: 25px;
       width: 100%;
       height: 100%;
-      min-height: 20em;
+      min-height: 20em;*/
+
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
   }
   .cirImg:hover {
       border:10px;
@@ -33,7 +38,7 @@
 /*      -webkit-filter: grayscale(90%);
       filter: grayscale(90%); /* make all photos black and white */
       width: 100%; /* Set width to 100% */
-      height:700;
+   /*   height:700;*/
       margin: auto;
       margin-top: 50px;
   }
@@ -144,14 +149,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/kennyBanner1.png" width="100%" alt="Damn Kenny Kens">
+        <img src="img/banner1.png" alt="Damn Kenny Kens">
       </div>
+    
+    <div class="item">
+      <img src="img/banner2.png" alt="Chicago">
+   
+      </div> 
     </div>
 </div>
 
 <div class="container text-center">
 
-  <img src="img/logo.png">
+{{--   <img src="img/logo.png"> --}}
   <h2><em><b>100% PURE DETROIT HONKEY TONK!</b></em></h2>
   
   <p>Bacon ipsum dolor amet picanha beef ribs frankfurter, boudin ribeye strip steak bresaola pork chop bacon fatback. Doner pancetta pastrami fatback t-bone. Rump shankle bacon, jowl turkey pork belly sirloin strip steak ham salami. Biltong short loin meatball sausage cow.<br /><br />
@@ -163,7 +173,7 @@ Leberkas alcatra tongue, corned beef turkey ham hock chicken meatball short ribs
     <div class="col-sm-4">
       <p><strong>Bar</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-      <img src="img/kenny2.jpg" class="img-circle cirImg" alt="Random Name">
+      <img src="img/cir2.png" class="img-circle cirImg" alt="Random Name"  width="255" height="255">
       </a>
       <div id="demo" class="collapse">
         <p>Kenny Kens</p>
@@ -174,7 +184,7 @@ Leberkas alcatra tongue, corned beef turkey ham hock chicken meatball short ribs
     <div class="col-sm-4">
       <p><strong>Machine Shop</strong></p><br>
       <a href="#demo2" data-toggle="collapse">
-      <img src="img/kenny.jpg" class="img-circle cirImg" alt="Random Name">
+      <img src="img/cir1.png" class="img-circle cirImg" alt="Random Name"  width="36" height="562">
       </a>
       <div id="demo2" class="collapse">
         <p>Kenny Kens</p>
@@ -185,7 +195,7 @@ Leberkas alcatra tongue, corned beef turkey ham hock chicken meatball short ribs
     <div class="col-sm-4">
       <p><strong>Painted Lady</strong></p><br>
       <a href="#demo3" data-toggle="collapse">
-      <img src="img/kenny3.jpg" class="img-circle cirImg" alt="Random Name">
+      <img src="img/cir3.png" class="img-circle cirImg" alt="Random Name"  width="255" height="255">
       </a>
       <div id="demo3" class="collapse">
         <p>Kenny Kens</p>
