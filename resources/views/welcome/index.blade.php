@@ -37,8 +37,8 @@
    .carousel-inner img {
 /*      -webkit-filter: grayscale(90%);
       filter: grayscale(90%); /* make all photos black and white */
-      width: 100%; /* Set width to 100% */
-   /*   height:700;*/
+      width: 70%; /* Set width to 100% */
+/*      height:700;*/
       margin: auto;
       margin-top: 50px;
   }
@@ -118,7 +118,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" ><img src="img/logo2.png"></a>
+      <a class="navbar-brand" href="#" ><img src="img/Jug.jpg"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
