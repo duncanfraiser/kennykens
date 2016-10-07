@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use App\Welcome;
+
 
 class WelcomeController extends Controller
 {
@@ -25,7 +25,8 @@ class WelcomeController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('welcome.create');
     }
 
     /**
@@ -36,7 +37,10 @@ class WelcomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $welcome = new Welcome;
+        $welcome->fill($request->all());
+        $welcome->save();
+        return redirect('/');
     }
 
     /**

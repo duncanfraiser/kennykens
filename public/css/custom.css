@@ -1,0 +1,108 @@
+  .container {
+      padding: 30px 10px;
+  }
+
+  .dashboard{
+    margin-top: 50px;
+    background-color: #919191;
+  }
+/*  .dashboard h1{
+    color: #113ccd;
+    outline: 2px 2px #ff0000;
+  }
+
+    .dashboard h2{
+    color: #b10d0d;
+  }*/
+
+
+  .cirImg {
+/*      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 100%;
+      height: 100%;
+      min-height: 20em;*/
+
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+  }
+  .cirImg:hover {
+      border:10px;
+      border-color: #909090;
+  }
+
+  .myCarousel{
+
+    margin:auto;
+
+  }
+   .carousel-inner img {
+/*      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */
+      width: 70%; /* Set width to 100% */
+/*      height:700;*/
+      margin: auto;
+      margin-top: 50px;
+  }
+
+  .tourDate {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .tourDate h3 {
+    color: #fff;
+}
+  .tourDate p {
+    font-style: italic;
+}
+    
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+    
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 10px 10px 50px 10px;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail h1 {
+      font-family: 'Shadows Into Light', cursive;
+      margin-top: 15px;
+      color: red;
+      padding-top: 5px;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+.navbar{
+    min-height: 50px;
+}
+  .navbar-brand{
+    padding: 3px 20px;
+  }
+  .navbar-brand img{
+    max-height: 44px;
+    padding: 0 0;
+    margin: 0;
+  }
+
+  #blackandwhite{
+          -webkit-filter: grayscale(90%);
+      filter: grayscale(90%);  /*make all photos black and white*/
+  }
