@@ -10,7 +10,10 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-Route::resource('/','WelcomeController');
+
+Route::get('/','WelcomeController@index');
+
+Route::resource('/welcome','WelcomeController');
 
 // Route::get('/', function () {
 //     return view('welcome');

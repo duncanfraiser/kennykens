@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
+
 use App\Http\Requests;
-use App\Welcome;
 
-
-class WelcomeController extends Controller
+class BookController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $welcome = Welcome::latest()->first();
-
-        return view('welcome.index', compact('welcome'));
+        //
     }
 
     /**
@@ -27,8 +25,7 @@ class WelcomeController extends Controller
      */
     public function create()
     {
-
-        return view('welcome.create');
+        //
     }
 
     /**
@@ -39,10 +36,7 @@ class WelcomeController extends Controller
      */
     public function store(Request $request)
     {
-        $welcome = new Welcome;
-        $welcome->fill($request->all());
-        $welcome->save();
-        return redirect('/');
+        //
     }
 
     /**
@@ -62,9 +56,9 @@ class WelcomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Welcome $welcome)
+    public function edit($id)
     {
-        return view('welcome.edit', compact('welcome'));
+        //
     }
 
     /**
@@ -74,11 +68,9 @@ class WelcomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Welcome $welcome)
+    public function update(Request $request, $id)
     {
-        $welcome->update($request->all());
-        
-        return redirect('/');
+        //
     }
 
     /**

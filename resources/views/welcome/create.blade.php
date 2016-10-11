@@ -1,9 +1,9 @@
 @extends('layouts.main')
 @section('content')
-<div class="container dashboard col-md-12" style="background:url('img/CSA_op.png'); background-size: cover" >
+<div class="container dashboard col-md-12" style="background:url({{ asset('img/CSA_op.png') }}); background-size: cover" >
 <div class="text-center">
 <h1>This is where you create our welcome message!</h1>
-<img src="img/Duncan.png">
+<img src="{{ asset('img/Duncan.png') }}">
 <h1>You Love Me!!</h1>
 </div>
 <div class="col-md-8 col-md-offset-2">

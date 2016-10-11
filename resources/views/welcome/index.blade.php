@@ -5,12 +5,9 @@
 <div class="container text-center">
 
 {{--   <img src="img/logo.png"> --}}
-  <h2><em><b>100% PURE DETROIT HONKEY TONK!</b></em></h2>
+  <h2><em><b>{{$welcome->title}}</b></em></h2>
   
-  <p>Bacon ipsum dolor amet picanha beef ribs frankfurter, boudin ribeye strip steak bresaola pork chop bacon fatback. Doner pancetta pastrami fatback t-bone. Rump shankle bacon, jowl turkey pork belly sirloin strip steak ham salami. Biltong short loin meatball sausage cow.<br /><br />
-  Bacon ipsum dolor amet ham hock bacon tenderloin filet mignon doner, pork belly sirloin pork chop pig short ribs hamburger alcatra ball tip jowl strip steak. Porchetta ribeye corned beef, ham short ribs meatball ham hock doner pork loin prosciutto flank bacon. Pork meatloaf andouille short loin, fatback capicola bacon ham meatball beef shankle. Tongue pig capicola flank, meatloaf shank hamburger corned beef shoulder boudin bresaola strip steak pastrami. Filet mignon bacon pork chop ham hock short ribs. Ground round ribeye salami rump venison beef porchetta pork. Ribeye alcatra kielbasa, porchetta swine hamburger short ribs turkey bresaola picanha.<br /><br />
-
-Leberkas alcatra tongue, corned beef turkey ham hock chicken meatball short ribs boudin picanha brisket meatloaf pig fatback. Filet mignon ribeye bacon salami andouille leberkas, landjaeger turkey. Corned beef turducken shoulder tenderloin short loin, shank shankle pork ribeye jowl pork belly swine tail beef. Ham hock rump bresaola pork belly, picanha flank swine doner cow meatloaf. Shank brisket capicola tenderloin frankfurter, cow tri-tip jowl. Chicken salami bacon spare ribs jerky turducken. Strip steak shank landjaeger, picanha ground round sirloin bresaola venison leberkas alcatra biltong short loin pork loin prosciutto.</p>
+  <p>{!!$welcome->body!!}</p>
   <br>
   <div class="row">
     <div class="col-sm-4">
