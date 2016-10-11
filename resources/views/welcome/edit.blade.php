@@ -8,7 +8,6 @@
 </div>
 <div class="col-md-8 col-md-offset-2">
 {{Form::model($welcome, ['method' => 'PATCH', 'action' => ['WelcomeController@update', $welcome->id]])}}
-{{Form::open(['method' => 'POST', 'action' => 'WelcomeController@store'])}}
 	<div class="form-group">
 		{{Form::label('title', 'Title:')}}
 		{{Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Enter Title'])}}
