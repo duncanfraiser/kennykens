@@ -2,7 +2,7 @@
 @section('content')
 <div class="container dashboard col-md-12" style="background:url({{ asset('img/CSA_op.png') }}); background-size: cover">
 <div class="text-center">
-<h1>This is where you edit our welcome Bio, Homo!</h1>
+<h1>This is where you edit your welcome Bio, Homo!</h1>
 <img src="{{ asset('img/Duncan.png') }}">
 <h1>You Love Me!!</h1>
 </div>
