@@ -85,7 +85,7 @@
         <h4>Kenny Kens</h4>
       </div>
       <div class="modal-body text-center">
-      <img src="img/ken.jpg" alt="Kenny Kens & The Brown Bottle Boys">
+      <img src="img/Ken.jpg" alt="Kenny Kens & The Brown Bottle Boys">
       <p style="color: #555"><br/>I enjoy long walks in parking lots of rest areas at night. I LOOOOVEEE penises in my mouth, can't get enough. Give me a bag~O~dicks PLEASE. I'm a huge vagina when it comes to relationships. HEY FELLAS.....HOLLA!<br>YOLO!</p>
       </div>
       <div class="modal-footer">
@@ -105,7 +105,7 @@
         <h4>Drunkin Duncan</h4>
       </div>
       <div class="modal-body text-center">
-      <img src="img/duncan.png" alt="Kenny Kens & The Brown Bottle Boys">
+      <img src="img/Duncan.png" alt="Kenny Kens & The Brown Bottle Boys">
       <p style="color: #555"><br/>Wicked Jedi Badass Coder<br/>All around great guy.<br/>Lifetime pass holder for all KK & The BB Boys shows!<br/>TCB Bitches!!</p>
       </div>
       <div class="modal-footer">
