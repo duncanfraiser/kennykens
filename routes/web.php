@@ -22,3 +22,10 @@ Route::resource('/welcome','WelcomeController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource('/event', 'EventController');
+
+Route::resource('/video', 'VideoController');
+
+Route::resource('/book', 'BookController');
+Route::get('book/{book}/thanks', 'BookController@thanks');

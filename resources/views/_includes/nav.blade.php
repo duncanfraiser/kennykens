@@ -10,10 +10,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-left">
-        <li><a href="/">HOM0</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/video">VIDEOS</a></li>
+        <li><a href="/event">TOUR</a></li>
+        <li><a href="/book/create">BOOKING</a></li>
 
         <li class="dropdown navbar-right">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE<span class="caret"></span></a>

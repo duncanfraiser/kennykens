@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Book;
+use App\Video;
 
-class BookController extends Controller
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+        $videos = Video::get();
+        return view('video.index', compact('videos'));
     }
 
     /**
@@ -24,7 +25,7 @@ class BookController extends Controller
      */
     public function create()
     {
-        return view('book.create');
+        //
     }
 
     /**
@@ -35,15 +36,7 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-
-            $this->validate($request,[
-                'venue_name' => 'required',
-
-                ]);
-        $book = new Book;
-        $book->fill($request->all());
-        $book->save();
-        return redirect('/book/'.$book->id.'/thanks');
+        //
     }
 
     /**
@@ -90,12 +83,4 @@ class BookController extends Controller
     {
         //
     }
-
-    public function thanks($id)
-    {
-        $book = Book::findOrFail($id);
-
-        return view('book.thanks', compact('book'));
-    }
-
 }

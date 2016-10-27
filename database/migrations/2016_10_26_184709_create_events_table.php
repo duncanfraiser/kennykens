@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBooksTable extends Migration
+class CreateEventsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,14 @@ class CreateBooksTable extends Migration
      */
     public function up()
     {
-        Schema::create('books', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->increments('id');            
-            $table->date('date');
-            $table->string('venue_name');
-            $table->string('contact');
-            $table->string('facebook');
-            $table->string('sound_lights');
-            $table->string('offer');
-            $table->string('start_time');
-            $table->string('set_length');
-            $table->string('merch_area');
+            $table->string('title');
+            $table->string('body');
+            $table->date('start_date');
+            $table->dateTime('start_time');
+            $table->date('end_date');
+            $table->dateTime('end_time');
             $table->softDeletes();
             $table->rememberToken();
             $table->timestamps();
@@ -37,6 +34,6 @@ class CreateBooksTable extends Migration
      */
     public function down()
     {
-        Schema::drop('books');
+        Schema::drop('events');
     }
 }
