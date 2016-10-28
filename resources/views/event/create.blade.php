@@ -34,7 +34,7 @@
 		{{Form::date('end_date', null, ['class' => 'form-control'])}}
 	</div>
 	<div class="form-group">
-		{{Form::label('end_time', 'End Date:')}}
+		{{Form::label('end_time', 'End Time:')}}
 		{{Form::time('end_time', null, ['class' => 'form-control'])}}
 	</div>
 	<div class="form-group pull-right">
