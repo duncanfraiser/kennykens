@@ -12,7 +12,7 @@
   <script src="https://use.fontawesome.com/80936d74be.js"></script>
 
 
-<script src="js/jPages.js"></script>
+
   
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('css/custom.css') }}?1">

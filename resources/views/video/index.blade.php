@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-<div class="container" style="margin-top: 50px">
+<div class="container" style="margin-top: 50px;     width: 1170px">
 <h1>Video Gallery</h1>
 
 

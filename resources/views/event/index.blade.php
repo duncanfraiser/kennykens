@@ -2,10 +2,11 @@
 @section('content')
     <div class="content" style="margin-top: 75px">
     
-        <div class="container-fluid">
-            <h1><center>Brown Bottle Event Calendar</center></h1>
+        <div class="col-md-6 col-md-offset-3">
+            <h1>Brown Bottle Event Calendar<img style="float: right" src="{{url('img/jugnail.png')}}"></h1>
+        </div>
     <div id='calendar' class="col-md-10 col-md-offset-1" style="margin-top: 50px"></div>
-</div>
+
 </div>
 @stop
 @section('scripts')

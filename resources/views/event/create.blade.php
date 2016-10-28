@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-<div class="container dashboard col-md-12" style="background:url({{ asset('img/CSA_op.png') }}); background-size: cover" >
+<div class="container dashboard" style="background:url({{ asset('img/CSA_op.png') }}); background-size: cover">
 <div class="col-md-6 col-md-offset-3" style="background-color: #000; margin-top: 100px">
 <h2>Create Brown Bottle Event</h2>
 <div class="col-md-12">

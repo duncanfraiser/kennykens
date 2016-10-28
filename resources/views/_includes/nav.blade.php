@@ -47,6 +47,7 @@
                             <ul class="dropdown-menu" role="menu">
                             <li><a href="/welcome/1/edit">Edit Bio</a></li>                  
                             <li><a href="/event/create">Add Event</a></li>
+                            <li><a href="/book">Booking List</a></li>
                                 <li>
                                     <a href="{{ url('/logout') }}"
                                         onclick="event.preventDefault();
