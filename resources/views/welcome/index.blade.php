@@ -20,7 +20,7 @@
     <a style="color: #fff" href="{{url('/book/create')}}"><img src="img/cir4.png" class="img-circle cirImg" alt="Kenny Kens & The Brown Bottle Boys"><p style="margin-top: 0">Booking</p></a>
     </div>
     <div class="col-sm-4">
-    <img src="img/cir5.png" class="img-circle cirImg" alt="Kenny Kens & The Brown Bottle Boys">
+    <a style="color: #fff" href="{{url('/event')}}"><img src="img/cir5.png" class="img-circle cirImg" alt="Kenny Kens & The Brown Bottle Boys"><p style="margin-top: 0">Events</p></a>
     </div>
     </div>
 </div>
@@ -55,7 +55,7 @@
 <div class="container">
 <h3 class="text-center">The Brown Bottle Boys</h3>
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Kenny Kens</a></li>
+    <li class="active"><a data-toggle="tab"   href="#home">Kenny Kens</a></li>
     <li><a data-toggle="tab" href="#menu1">Duncan</a></li>
     <li><a data-toggle="tab" href="#menu2">Elvis</a></li>
   </ul>
@@ -82,7 +82,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4>Kenny Kens</h4>
+        <h4>~Kenny Kens~</h4>
       </div>
       <div class="modal-body text-center">
       <img src="img/Ken.jpg" alt="Kenny Kens & The Brown Bottle Boys">
@@ -102,7 +102,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4>Drunkin Duncan</h4>
+        <h4>~Drunkin Duncan~</h4>
       </div>
       <div class="modal-body text-center">
       <img src="img/Duncan.png" alt="Kenny Kens & The Brown Bottle Boys">
@@ -122,7 +122,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4>Elvis Presley</h4>
+        <h4>~Elvis Presley~</h4>
       </div>
       <div class="modal-body text-center">
       <img src="img/ep.png" alt="Kenny Kens & The Brown Bottle Boys">

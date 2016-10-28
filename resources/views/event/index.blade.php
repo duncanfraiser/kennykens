@@ -10,21 +10,33 @@
 @stop
 @section('scripts')
 
-<!--         {{-- Full Calendar Links --}} -->
-        <link rel="stylesheet" href="{{ asset('css/fullcalendar.css') }}">
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
-        <script src="{{ asset('js/moment.min.js') }}"></script>
-        <script src="{{ asset('js/fullcalendar.js') }}"></script>
-
 <script>
+
 $(document).ready(function() {
-
     // page is now ready, initialize the calendar...
-
     $('#calendar').fullCalendar({
-        // put your options and callbacks here
-    })
+        events: [
+            @foreach($events as $event)
+            {
+            title  : '{{$event->title}}',
+            start  : '{{$event->start_date}} {{$event->start_time}}',
+            end    : '{{$event->end_date}} {{$event->end_time}}',
+            url: '/event/{{$event->id}}',
+            color: '#000',
+            textColor: '' // an option!
+            },
+            @endforeach
+        ],
 
-});
+
+        eventClick: function(event) {
+            if (event.url) {
+            window.open(event.url);
+            return false;
+            }
+        }
+    
+    });
+}); 
 </script>
 @stop
