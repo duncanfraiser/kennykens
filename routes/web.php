@@ -27,7 +27,11 @@ Route::resource('/event', 'EventController');
 
 Route::resource('/video', 'VideoController');
 
+Route::resource('/press', 'PressController');
+
 Route::resource('/book', 'BookController');
 Route::get('book/{book}/thanks', 'BookController@thanks');
 
 Route::resource('fileuploads', 'FileuploadController');
+
+Route::resource('merchandise', 'MerchandiseController');

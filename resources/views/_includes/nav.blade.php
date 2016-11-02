@@ -14,13 +14,13 @@
         <li><a href="/video">VIDEOS</a></li>
         <li><a href="/event">TOUR</a></li>
         <li><a href="/book/create">BOOKING</a></li>
+        <li><a href="/merchandise">MERCHANDISE</a></li>
 
         <li class="dropdown navbar-right">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE<span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRESS<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li>
+            <li><a href="press/1">Albumn Review</a></li>
+
           </ul>
         </li>
 
