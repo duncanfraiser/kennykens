@@ -19,7 +19,7 @@
         <li class="dropdown navbar-right">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRESS<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="press/1">Albumn Review</a></li>
+            <li><a href="press/1">Album Review</a></li>
 
           </ul>
         </li>
