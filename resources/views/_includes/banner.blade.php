@@ -11,6 +11,10 @@
       </div> 
 
       <div class="item">
+        <img src="img/banner8.png" alt="Kenny Kens & The Brown Bottle Boys">
+      </div> 
+
+      <div class="item">
         <img src="img/banner3.png" alt="Kenny Kens & The Brown Bottle Boys">
       </div> 
    
