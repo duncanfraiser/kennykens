@@ -189,6 +189,7 @@ div.vids iframe {
 div.pics{
     margin: 5px;
     border: 1px solid #ccc;
+    float: left;
     width: 362px;
 }
 

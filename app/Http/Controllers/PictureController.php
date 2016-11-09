@@ -63,7 +63,7 @@ class PictureController extends Controller
         $picture->pic = $pic->getClientOriginalName();  
         $picture->save();
        
-        return view('picture.create');
+        return redirect('picture');
     }
 
     /**
