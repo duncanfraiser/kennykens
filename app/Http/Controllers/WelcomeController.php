@@ -8,6 +8,18 @@ use App\Welcome;
 
 class WelcomeController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('auth', ['only' => [
+            'store',
+            'create',
+            'edit', 
+            'update'
+        ]]);
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *

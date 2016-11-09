@@ -25,6 +25,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('/event', 'EventController');
 
+Route::resource('/picture', 'PictureController');
+
 Route::resource('/video', 'VideoController');
 
 Route::resource('/press', 'PressController');

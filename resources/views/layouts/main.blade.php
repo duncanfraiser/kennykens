@@ -29,7 +29,7 @@
          <script src="{{ asset('js/jPages.js') }}"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-                             
+     @yield('styles')                        
 </head>
 
 <body>

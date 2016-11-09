@@ -1,19 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use App\Http\Requests;
-use App\Book;
 
-class BookController extends Controller
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+
+use App\Picture;
+
+class PictureController extends Controller
 {
+
         public function __construct(){
         $this->middleware('auth', ['only' => [
-            'index',
-            'edit', 
-            'update'
+            'store',
+            'create'
         ]]);
     }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -21,8 +26,10 @@ class BookController extends Controller
      */
     public function index()
     {
-        $books = Book::get();
-        return view('book.index', compact('books'));
+    
+        $pics = Picture::get();
+       
+        return view('picture.index', compact('pics'));
     }
 
     /**
@@ -32,7 +39,7 @@ class BookController extends Controller
      */
     public function create()
     {
-        return view('book.create');
+        return view('picture.create');
     }
 
     /**
@@ -43,15 +50,20 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-
-            $this->validate($request,[
-                'venue_name' => 'required',
-
-                ]);
-        $book = new Book;
-        $book->fill($request->all());
-        $book->save();
-        return redirect('/book/'.$book->id.'/thanks');
+   
+    
+        $pic = request()->file('picture');               
+        $thumb = request()->file('thumbnail');               
+       // The storeAs() is defaulted to save in storage/app/public/pics (I added the pics extintion), to make the stored files accesable to the public you have to use the php artisan storage:link to Create a symbolic link from "public/storage" to "storage/app/public" then you can source an image as follows kennykens.df.ercorr.com/storage/pics/hoth.jpg. The storAs() passes 2 arguments (path,filename) methods are located on UploadedFile.php;
+        $pic->storeAs('public/pics', $pic->getClientOriginalName());
+        $thumb->storeAs('public/thumbnails', $thumb->getClientOriginalName());
+        $picture = new Picture;
+        $picture->title = $request->title;
+        $picture->thumbnail = $thumb->getClientOriginalName();  
+        $picture->pic = $pic->getClientOriginalName();  
+        $picture->save();
+       
+        return view('picture.create');
     }
 
     /**
@@ -62,8 +74,8 @@ class BookController extends Controller
      */
     public function show($id)
     {
-        $book = Book::findOrFail($id);
-        return view('book.show', compact('book'));
+        $pic = Picture::findorfail($id);
+       return view('picture.show', compact('pic'));
     }
 
     /**
@@ -99,12 +111,4 @@ class BookController extends Controller
     {
         //
     }
-
-    public function thanks($id)
-    {
-        $book = Book::findOrFail($id);
-
-        return view('book.thanks', compact('book'));
-    }
-
 }

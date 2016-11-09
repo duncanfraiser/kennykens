@@ -17,10 +17,10 @@
     <a style="color: #fff" href="{{url('/video')}}"><img src="img/cir1.png" class="img-circle cirImg" alt="Kenny Kens & The Brown Bottle Boys"><p style="margin-top: 0">Video Gallery</p></a>
     </div>
     <div class="col-sm-4">
-    <a style="color: #fff" href="{{url('/book/create')}}"><img src="img/cir4.png" class="img-circle cirImg" alt="Kenny Kens & The Brown Bottle Boys"><p style="margin-top: 0">Booking</p></a>
+    <a style="color: #fff" href="{{url('/event')}}"><img src="img/cir4.png" class="img-circle cirImg" alt="Kenny Kens & The Brown Bottle Boys"><p style="margin-top: 0">Upcoming Events</p></a>
     </div>
     <div class="col-sm-4">
-    <a style="color: #fff" href="{{url('/event')}}"><img src="img/cir5.png" class="img-circle cirImg" alt="Kenny Kens & The Brown Bottle Boys"><p style="margin-top: 0">Events</p></a>
+    <a style="color: #fff" href="{{url('/picture')}}"><img src="img/cir5.png" class="img-circle cirImg" alt="Kenny Kens & The Brown Bottle Boys"><p style="margin-top: 0">Photo Gallery</p></a>
     </div>
     </div>
 </div>
@@ -95,7 +95,7 @@
         <h4>~Kenny Kens~</h4>
       </div>
       <div class="modal-body text-center">
-      <img src="img/band/ken.png" class="bioImg" alt="Kenny Kens & The Brown Bottle Boys">
+      <img src="img/band/ken2.png" class="bioImg" alt="Kenny Kens & The Brown Bottle Boys">
       <p style="color: #555"><br/>The driving force of the Brown Bottle Boys. Drawing from his rural Kentucky roots, there’s nothing phony about this guy. His music is heart-felt, 100% honest to God country! One highlight from Kenny’s career was performing in and around Austin, and opening a show for Dale Watson in Luckenbach Texas. A singer and a songwriter, he has just completed his CD titled “What The Hell Happened to Country” which is a collection of his own songs. It channels country hero greats such as Ernest Tubb and Merle Haggard to create an overall project that is just as original as it is traditional.</p>
       </div>
       <div class="modal-footer">

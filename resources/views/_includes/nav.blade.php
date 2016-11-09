@@ -11,15 +11,17 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-left">
         <li><a href="/">HOME</a></li>
-        <li><a href="/video">VIDEOS</a></li>
-        <li><a href="/event">TOUR</a></li>
-        <li><a href="/book/create">BOOKING</a></li>
-        <li><a href="/merchandise">MERCHANDISE</a></li>
+        <li><a href="{{url('/video')}}">VIDEOS</a></li>
+        <li><a href="{{url('/picture')}}">PHOTOS</a></li>
+        <li><a href="{{url('/event')}}">TOUR</a></li>
+        <li><a href="{{url('/book/create')}}">BOOKING</a></li>
+        <li><a href="{{url('/merchandise')}}">MERCHANDISE</a></li>
 
         <li class="dropdown navbar-right">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRESS<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="press/1">Album Review</a></li>
+            <li><a href="{{url('/press/1')}}">Album Review</a></li>
+            <li><a href="{{url('/press/2')}}">A Night of Rockabilly</a></li>
 
           </ul>
         </li>
@@ -45,9 +47,10 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                            <li><a href="/welcome/1/edit">Edit Bio</a></li>                  
+                            <li><a href="/welcome/1/edit">Edit Bio</a></li>                 
                             <li><a href="/event/create">Add Event</a></li>
                             <li><a href="/book">Booking List</a></li>
+                            <li><a href="/picture/create">Add Picture</a></li>
                                 <li>
                                     <a href="{{ url('/logout') }}"
                                         onclick="event.preventDefault();
