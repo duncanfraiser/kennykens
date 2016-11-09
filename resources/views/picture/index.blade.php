@@ -15,8 +15,7 @@
 <div class="pics">
 <a target="BLANK" href="{{ url('/picture/'.$pic->id)}}">
 <img src="{{ url('/storage/thumbnails/' . $pic->thumbnail)}} " width="360px" ></a>
-
-  <div class="desc">{{$pic->title}}</div>
+ <div class="desc">{{$pic->title}}</div>
 </div>
 @endforeach
 </div>

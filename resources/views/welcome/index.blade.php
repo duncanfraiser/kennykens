@@ -52,7 +52,7 @@
 
 
 
-<div class="container">
+<div class="container" style="padding-bottom: 0px">
 <h3 class="text-center">The Brown Bottle Boys</h3>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab"   href="#home">Kenny Kens</a></li>
@@ -185,6 +185,6 @@
       </div>
     </div>
   </div>
-</div
+</div>
 
 @stop

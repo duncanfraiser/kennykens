@@ -35,11 +35,29 @@
 <body>
 @include('_includes.nav')
 @yield('content')
-<div class="footer pull-right">
-    <div class="col-lg-12">
+<div class="footer" style="float: right">
+    <div class="col-lg-12" >
     <!-- Yield the slider if there is one -->
-    <p style="color: #9d9d9d">&copy; 2016 Kenny Kens & The Brown Bottle Boys</p>
-    </div>
+    <p style="padding: 50px 0 30px 0">
+
+<span style="color: #fff; font-size: 15px; float: right">Follow us on social media!<br>
+<a target="BLANK" title="Facebook" href="https://www.facebook.com/KennyKensBand/">
+<img src="/img/facebook.png" width="35" height="35" />
+</a>
+<a target="Blank" title="Instagram" href="https://www.instagram.com/kenny.kens/?hl=en">
+<img src="/img/instagram.png" width="35" height="35" />
+</a>
+<a target="BLANK" title="Reverb Nation" href="https://www.reverbnation.com/kennykensthecashcreekband">
+<img src="/img/reverbnation.png" width="35" height="35" />
+</a>
+<a target="BLANK" title="Twitter" href="https://twitter.com/?lang=en">
+<img src="/img/twitter.png" width="35" height="35" />
+</a>
+<a target="BLANK" title="You Tube" href="https://www.youtube.com/channel/UCTSkUmSQr8RzVgxODOy_bpA">
+<img src="/img/youtube1.png" width="35" height="35" />
+</a></span></p>
+<p style="color: #9d9d9d"><br/>&copy; 2016 Kenny Kens & The Brown Bottle Boys</p>
+
 </div>
 
     @include('_includes.froala.froala-js')
