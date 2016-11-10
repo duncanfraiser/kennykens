@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('content')
+<div class='container'>
 <div class="col-md-6 col-md-offset-3" style="background-color: #000; margin-top: 100px">
 <h2>Brown Bottle Booking</h2>
 <div class="col-md-12">
@@ -63,5 +64,6 @@
 
 {{Form::close()}}
 
+</div>
 </div>
 @stop
