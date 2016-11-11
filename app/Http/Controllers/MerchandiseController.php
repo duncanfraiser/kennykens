@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Merchandise;
+
 class MerchandiseController extends Controller
 {
     /**
@@ -36,7 +38,43 @@ class MerchandiseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $atotal = ($request['album'] * 10);
+        $bstotal = (($request['bsmall'] + $request['bmedium'] + $request['blarge'] + $request['bxl']) * 10) + (($request['bxxl'] + $request['bxxxl']) * 13);
+        $wstotal = (($request['wsmall'] + $request['wmedium'] + $request['wlarge'] + $request['wxl']) * 10) + (($request['wxxl'] + $request['wxxxl']) * 13);
+        $ktotal = ($request['koozie'] * 3);
+        $stotal = ($request['sticker']);
+        $total = ($atotal + $bstotal + $wstotal + $ktotal + $stotal);
+
+        $merch = new Merchandise;
+        $merch->fill($request->all());
+        $merch->atotal = $atotal;
+        $merch->bstotal = $bstotal;
+        $merch->wstotal = $wstotal;
+        $merch->ktotal = $ktotal;
+        $merch->stotal = $stotal;
+        $merch->total = $total;
+
+        $merch->bsmalltotal = ($request['bsmall'] * 10);
+        $merch->bmediumtotal = ($request['bmedium'] * 10);
+        $merch->blargetotal = ($request['blarge'] * 10);
+        $merch->bxltotal = ($request['bxl'] * 10);
+        $merch->bxxltotal = ($request['bxxl'] * 13);
+        $merch->bxxxltotal = ($request['bxxxl'] * 13);
+
+        $merch->wsmalltotal = ($request['wsmall'] * 10);
+        $merch->wmediumtotal = ($request['wmedium'] * 10);
+        $merch->wlargetotal = ($request['wlarge'] * 10);
+        $merch->wxltotal = ($request['wxl'] * 10);
+        $merch->wxxltotal = ($request['wxxl'] * 13);
+        $merch->wxxxltotal = ($request['wxxxl'] * 13);
+
+        $merch->save();
+
+
+        return redirect('merchandise/'.$merch->id);
+
+
     }
 
     /**
@@ -47,7 +85,8 @@ class MerchandiseController extends Controller
      */
     public function show($id)
     {
-        //
+        $merch = Merchandise::findorfail($id);
+        return view('merchandise.show', compact('merch'));
     }
 
     /**

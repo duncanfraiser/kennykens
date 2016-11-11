@@ -37,3 +37,5 @@ Route::get('book/{book}/thanks', 'BookController@thanks');
 Route::resource('fileuploads', 'FileuploadController');
 
 Route::resource('merchandise', 'MerchandiseController');
+
+
