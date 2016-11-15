@@ -49,8 +49,8 @@ class MerchandiseController extends Controller
         $merch = new Merchandise;
         $merch->fill($request->all());
         $merch->atotal = $atotal;
-        $merch->bstotal = $bstotal;
-        $merch->wstotal = $wstotal;
+        // $merch->bstotal = $bstotal;
+        // $merch->wstotal = $wstotal;
         $merch->ktotal = $ktotal;
         $merch->stotal = $stotal;
         $merch->total = $total;

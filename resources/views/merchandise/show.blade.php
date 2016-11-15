@@ -82,54 +82,75 @@ th {
 
 @if($merch->wsmall != 0)
   <tr>
-    <td>~ Small Black T-Shirt ~</td>
-    <td>~ {{$merch->bsmall}} ~</td>
-    <td style="color: green">~ ${{$merch->bsmalltotal}} ~</td>
+    <td>~ Small White T-Shirt ~</td>
+    <td>~ {{$merch->wsmall}} ~</td>
+    <td style="color: green">~ ${{$merch->wsmalltotal}} ~</td>
   </tr>
 @endif
-@if($merch->bmedium != 0)
+@if($merch->wmedium != 0)
   <tr>
-    <td>~ Medium Black T-Shirt ~</td>
-    <td>~ {{$merch->bmedium}} ~</td>
-    <td style="color: green">~ ${{$merch->bmediumtotal}} ~</td>
+    <td>~ Medium White T-Shirt ~</td>
+    <td>~ {{$merch->wmedium}} ~</td>
+    <td style="color: green">~ ${{$merch->wmediumtotal}} ~</td>
   </tr>
 @endif
-@if($merch->blarge != 0)
+@if($merch->wlarge != 0)
   <tr>
-    <td>~ Large Black T-Shirt ~</td>
+    <td>~ Large White T-Shirt ~</td>
     <td>~ {{$merch->blarge}} ~</td>
-    <td style="color: green">~ ${{$merch->blargetotal}} ~</td>
+    <td style="color: green">~ ${{$merch->wlargetotal}} ~</td>
   </tr>
 @endif
-@if($merch->blarge != 0)
+@if($merch->wxl != 0)
   <tr>
-    <td>~ X Large Black T-Shirt ~</td>
-    <td>~ {{$merch->bxl}} ~</td>
-    <td style="color: green">~ ${{$merch->bxltotal}} ~</td>
+    <td>~ X Large White T-Shirt ~</td>
+    <td>~ {{$merch->wxl}} ~</td>
+    <td style="color: green">~ ${{$merch->wxltotal}} ~</td>
   </tr>
 @endif
-@if($merch->blarge != 0)
+@if($merch->wxxl != 0)
   <tr>
-    <td>~ XX Large Black T-Shirt ~</td>
-    <td>~ {{$merch->bxxl}} ~</td>
-    <td style="color: green">~ ${{$merch->bxxltotal}} ~</td>
+    <td>~ XX Large White T-Shirt ~</td>
+    <td>~ {{$merch->wxxl}} ~</td>
+    <td style="color: green">~ ${{$merch->wxxltotal}} ~</td>
   </tr>
 @endif
-@if($merch->blarge != 0)
+@if($merch->wxxxl != 0)
   <tr>
-    <td>~ XXX Large Black T-Shirt ~</td>
-    <td>~ {{$merch->bxxxl}} ~</td>
-    <td style="color: green">~ ${{$merch->bxxxltotal}} ~</td>
+    <td>~ XXX Large White T-Shirt ~</td>
+    <td>~ {{$merch->wxxxl}} ~</td>
+    <td style="color: green">~ ${{$merch->wxxxltotal}} ~</td>
   </tr>
 @endif
-
-
-
-
+@if($merch->koozie != 0)
+  <tr>
+    <td>~ Contraband Koozie ~</td>
+    <td>~ {{$merch->koozie}} ~</td>
+    <td style="color: green">~ ${{$merch->ktotal}} ~</td>
+  </tr>
+@endif
+@if($merch->sticker != 0)
+  <tr>
+    <td>~ Contraband Sticker ~</td>
+    <td>~ {{$merch->sticker}} ~</td>
+    <td style="color: green">~ ${{$merch->stotal}} ~</td>
+  </tr>
+@endif
+<br/>
+  <tr >
+    <td></td>
+    <td style=" border-top: solid #fff">~ Grand Total ~</td>
+    <td style=" border-top: solid #fff; color: green">~ ${{$merch->total}} ~</td>
+  </tr>
 
 </table>
+
+  	<button class="btn btn-primary" id="fixedbutton">Proceed to Checkout</button>
 	</div>
+
+
 </div>
+
 
 
 @stop

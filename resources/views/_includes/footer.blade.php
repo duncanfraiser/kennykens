@@ -1,7 +1,7 @@
 <div class="footer" >
 
 <div class="container" style="padding-bottom: 0px">
-<h1 class="text-center">Brown Bottle Event Calendar<br/></h1>
+<h1 class="text-center">The Brown Bottle Boys<br/></h1>
       <div class="col-md-12" style="padding-bottom: 0px">
      
 
