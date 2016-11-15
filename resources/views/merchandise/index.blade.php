@@ -21,24 +21,24 @@
 	<img class="merch" src="/img/tshirt_black.png"> 
 	<div class="form-group" style="color: #000">
 	<span style="color: #fff">{{ Form::label('bsmall', 'Select Size & Qty:')}}</span><br/>
- 	   {{Form::select('bsmall', [0 => 'Qty', 1 => '1 S', 2 => '2 S', 3 => '3 S', 4 => '4 S', 5 => '5 S'])}}
- 	   {{Form::select('bmedium', [0 => 'Qty', 1 => '1 M', 2 => '2 M', 3 => '3 M', 4 => '4 M', 5 => '5 M'])}}
- 	   {{Form::select('blarge', [0 => 'Qty', 1 => '1 L', 2 => '2 L', 3 => '3 L', 4 => '4 L', 5 => '5 L'])}}
- 	   {{Form::select('bxl', [0 => 'Qty', 1 => '1 XL', 2 => '2 XL', 3 => '3 XL', 4 => '4 XL', 5 => '5 XL'])}}<br/>
- 	   {{Form::select('bxxl', [0 => 'Qty', 1 => '1 XXL', 2 => '2 XXL', 3 => '3 XXL', 4 => '4 XXL', 5 => '5 XXL'])}}
- 	   {{Form::select('bxxxl', [0 => 'Qty', 1 => '1 XXXL', 2 => '2 XXXL', 3 => '3 XXXL', 4 => '4 XXXL', 5 => '5 XXXL'])}}
+ 	   {{Form::select('bsmall', [0 => 'Small', 1 => '1 S', 2 => '2 S', 3 => '3 S', 4 => '4 S', 5 => '5 S'])}}
+ 	   {{Form::select('bmedium', [0 => 'Medium', 1 => '1 M', 2 => '2 M', 3 => '3 M', 4 => '4 M', 5 => '5 M'])}}
+ 	   {{Form::select('blarge', [0 => 'Large', 1 => '1 L', 2 => '2 L', 3 => '3 L', 4 => '4 L', 5 => '5 L'])}}
+ 	   {{Form::select('bxl', [0 => 'XL', 1 => '1 XL', 2 => '2 XL', 3 => '3 XL', 4 => '4 XL', 5 => '5 XL'])}}<br/>
+ 	   {{Form::select('bxxl', [0 => 'XXL', 1 => '1 XXL', 2 => '2 XXL', 3 => '3 XXL', 4 => '4 XXL', 5 => '5 XXL'])}}
+ 	   {{Form::select('bxxxl', [0 => 'XXXL', 1 => '1 XXXL', 2 => '2 XXXL', 3 => '3 XXXL', 4 => '4 XXXL', 5 => '5 XXXL'])}}
  	</div>
  	</div>
 	<div class='col-md-6'>
 	<img class="merch" src="/img/tshirt_white.png"> 
 	<div class="form-group"  style="color: #000">
 	<span style="color: #fff">{{ Form::label('bsmall', 'Select Size & Qty:')}}</span><br/>
- 	   {{Form::select('wsmall', [0 => 'Qty', 1 => '1 S', 2 => '2 S', 3 => '3 S', 4 => '4 S', 5 => '5 S'])}}
- 	   {{Form::select('wmedium', [0 => 'Qty', 1 => '1 M', 2 => '2 M', 3 => '3 M', 4 => '4 M', 5 => '5 M'])}}
- 	   {{Form::select('wlarge', [0 => 'Qty', 1 => '1 L', 2 => '2 L', 3 => '3 L', 4 => '4 L', 5 => '5 L'])}}
- 	   {{Form::select('wxl', [0 => 'Qty', 1 => '1 XL', 2 => '2 XL', 3 => '3 XL', 4 => '4 XL', 5 => '5 XL'])}}<br/>
- 	   {{Form::select('wxxl', [0 => 'Qty', 1 => '1 XXL', 2 => '2 XXL', 3 => '3 XXL', 4 => '4 XXL', 5 => '5 XXL'])}}
- 	   {{Form::select('wxxxl', [0 => 'Qty', 1 => '1 XXXL', 2 => '2 XXXL', 3 => '3 XXXL', 4 => '4 XXXL', 5 => '5 XXXL'])}}
+ 	   {{Form::select('wsmall', [0 => 'Small', 1 => '1 S', 2 => '2 S', 3 => '3 S', 4 => '4 S', 5 => '5 S'])}}
+ 	   {{Form::select('wmedium', [0 => 'Medium', 1 => '1 M', 2 => '2 M', 3 => '3 M', 4 => '4 M', 5 => '5 M'])}}
+ 	   {{Form::select('wlarge', [0 => 'Large', 1 => '1 L', 2 => '2 L', 3 => '3 L', 4 => '4 L', 5 => '5 L'])}}
+ 	   {{Form::select('wxl', [0 => 'XL', 1 => '1 XL', 2 => '2 XL', 3 => '3 XL', 4 => '4 XL', 5 => '5 XL'])}}<br/>
+ 	   {{Form::select('wxxl', [0 => 'XXL', 1 => '1 XXL', 2 => '2 XXL', 3 => '3 XXL', 4 => '4 XXL', 5 => '5 XXL'])}}
+ 	   {{Form::select('wxxxl', [0 => 'XXXL', 1 => '1 XXXL', 2 => '2 XXXL', 3 => '3 XXXL', 4 => '4 XXXL', 5 => '5 XXXL'])}}
 	</div>
 	</div>
 </div>
