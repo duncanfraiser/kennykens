@@ -128,6 +128,15 @@ p {
       transition: .2s;
   }
 
+/*.stripe-button-el
+{
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }*/
+
   .btn-primary{
 
   }

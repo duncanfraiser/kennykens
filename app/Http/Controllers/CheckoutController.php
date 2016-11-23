@@ -1,24 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use App\Merchandise;
+use Stripe\Stripe;
+use Stripe\Charge;
+use Stripe\Customer;
 
-use App\Picture;
-
-class PictureController extends Controller
+class CheckoutController extends Controller
 {
-
-        public function __construct(){
-        $this->middleware('auth', ['only' => [
-            'store',
-            'create'
-        ]]);
-    }
-
-
     /**
      * Display a listing of the resource.
      *
@@ -26,10 +17,10 @@ class PictureController extends Controller
      */
     public function index()
     {
-    
-        $pics = Picture::get();
-       
-        return view('picture.index', compact('pics'));
+           
+     
+
+        return view('checkout.index');
     }
 
     /**
@@ -39,7 +30,7 @@ class PictureController extends Controller
      */
     public function create()
     {
-        return view('picture.create');
+        //
     }
 
     /**
@@ -50,20 +41,22 @@ class PictureController extends Controller
      */
     public function store(Request $request)
     {
+        // preform the charge
    
-    
-        $pic = request()->file('picture');               
-        // $thumb = request()->file('thumbnail');               
-       // The storeAs() is defaulted to save in storage/app/public/pics (I added the pics extintion), to make the stored files accesable to the public you have to use the php artisan storage:link to Create a symbolic link from "public/storage" to "storage/app/public" then you can source an image as follows kennykens.df.ercorr.com/storage/pics/hoth.jpg. The storAs() passes 2 arguments (path,filename) methods are located on UploadedFile.php;
-        $pic->storeAs('public/pics', $pic->getClientOriginalName());
-        // $thumb->storeAs('public/thumbnails', $thumb->getClientOriginalName());
-        $picture = new Picture;
-        $picture->title = $request->title;
-        // $picture->thumbnail = $thumb->getClientOriginalName();  
-        $picture->pic = $pic->getClientOriginalName();  
-        $picture->save();
-       
-        return redirect('picture');
+        Stripe::setApiKey(config('services.stripe.secret'));
+
+        $customer = Customer::create([
+            'email' => request('stripeEmail'),
+            'source' => request('stripeToken')
+            ]);
+
+        Charge::create([
+            'customer' => $customer->id,
+            'amount' => $request->totalshit,
+            'currency' => 'usd'
+            ]);
+
+        return 'all done';
     }
 
     /**
@@ -73,9 +66,12 @@ class PictureController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
+
     {
-        $pic = Picture::findorfail($id);
-       return view('picture.show', compact('pic'));
+        // dd(config('services.stripe.key)'));
+        $merch = Merchandise::findorfail($id);
+        $total = $merch->total * 100;
+        return view('checkout.show', compact('merch', 'total'));
     }
 
     /**

@@ -38,4 +38,6 @@ Route::resource('fileuploads', 'FileuploadController');
 
 Route::resource('merchandise', 'MerchandiseController');
 
+Route::resource('checkout', 'CheckoutController');
+
 

@@ -15,6 +15,14 @@ th {
 }
 
  li {text-indent:-1px}
+ .stripe-button
+{
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
 
 </style>
 @stop
@@ -145,7 +153,23 @@ th {
 
 </table>
 
-  	<button class="btn btn-primary" id="fixedbutton">Proceed to Checkout</button>
+
+<form action="/checkout" method="POST">
+<input type=hidden name=totalshit value={{$total}}>
+
+  {{csrf_field()}}
+  <script  
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+    data-key="{{ config('services.stripe.key') }}"
+    data-amount=  "{{$total}}"
+    data-name="Contraband"
+    data-description="Checkout"
+    data-image="{{url('img/jugnail.png')}}"
+    data-locale="auto">
+  </script>
+</form>
+
+
 	</div>
 
 

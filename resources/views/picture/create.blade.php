@@ -9,10 +9,6 @@
 	{{Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Enter Picture Title'])}}
   </div>
   <div class="form-group">
-	{{ Form::label('thumbnail', 'Upload Thumbnail:')}}
-	{{ Form::file('thumbnail')}}
-  </div> 
-  <div class="form-group">
     {{ Form::label('picture', 'Upload Picture:')}}
 	{{ Form::file('picture')}}
   </div>

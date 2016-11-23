@@ -38,6 +38,7 @@ class MerchandiseController extends Controller
      */
     public function store(Request $request)
     {
+        
 
         $atotal = ($request['album'] * 10);
         $bstotal = (($request['bsmall'] + $request['bmedium'] + $request['blarge'] + $request['bxl']) * 10) + (($request['bxxl'] + $request['bxxxl']) * 13);
@@ -86,7 +87,8 @@ class MerchandiseController extends Controller
     public function show($id)
     {
         $merch = Merchandise::findorfail($id);
-        return view('merchandise.show', compact('merch'));
+        $total = $merch->total * 100;
+        return view('merchandise.show', compact('merch', 'total'));
     }
 
     /**

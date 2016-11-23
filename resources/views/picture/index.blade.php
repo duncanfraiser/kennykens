@@ -1,4 +1,34 @@
 @extends('layouts.main')
+@section('styles')
+<style type="text/css">
+
+  .container {
+      margin-top: 10px;
+      padding: 50px 10px;
+      width: 100%;   
+  }
+
+div.pics{
+
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+   background-color: #000;
+}
+
+.pics img{
+    height: 200%;
+      -webkit-transform: translate(-20%,-20%);
+      -ms-transform: translate(-20%,-20%);
+          transform: translate(-20%,-20%);
+
+}
+	
+</style>
+@stop
 @section('content')
 
 <div class="container" style="margin-top: 50px; padding: 50px">
@@ -14,8 +44,7 @@
 @foreach($pics as $pic)
 <div class="pics">
 <a target="BLANK" href="{{ url('/picture/'.$pic->id)}}">
-<img src="{{ url('/storage/thumbnails/' . $pic->thumbnail)}} " width="360px" ></a>
- <div class="desc">{{$pic->title}}</div>
+<img src="{{ url('/storage/pics/' . $pic->pic)}}"></a>
 </div>
 @endforeach
 </div>
@@ -27,7 +56,7 @@ $(function(){
 
   $("div.holder").jPages({
     containerID : "itemContainer",
-    perPage     : 6
+    perPage     : 12
   });
 
 });
