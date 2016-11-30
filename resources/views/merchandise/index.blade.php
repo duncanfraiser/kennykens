@@ -50,7 +50,7 @@
 <div class="merchItm"><img class="merch" src="/img/sticker.png"><h2>Sticker $1.00</h2>
 	<span style="color: #000">{{Form::select('sticker', [0 => 'Qty', 1 => '1', 2 => '2', 3 => '3', 4 => '4', 5 => '5'])}}</span>
 </div>
-{{Form::submit('Proceed to Cart', ['class' => 'btn btn-primary'])}}
+{{Form::submit('Proceed to Contraband Cart', ['class' => 'btn btn-primary'])}}
 {{Form::close()}}
 
 </div>
