@@ -2,7 +2,7 @@
 /public/storage
 /vendor
 /.idea
-/resources/views/.DS_Store
+.DS_Store
 Homestead.json
 Homestead.yaml
 .env
