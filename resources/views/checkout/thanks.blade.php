@@ -7,7 +7,7 @@
 <div>
 	<img src="{{url('/img/Ken.png')}}">
 </div>
-<h2>You just wait there with bells on sweetie, it's a commin!</h2>
+<h2>You just wait there with bells on sweetie, it's a comin'!</h2>
 <div>
 	<img src="{{url('img/jugnail.png')}}">
 </div>
