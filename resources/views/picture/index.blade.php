@@ -20,10 +20,11 @@ div.pics{
 }
 
 .pics img{
-    height: 200%;
-      -webkit-transform: translate(-20%,-20%);
+    height: 150%;
+/*    width: 100%;*/
+/*      -webkit-transform: translate(-20%,-20%);*/
       -ms-transform: translate(-20%,-20%);
-          transform: translate(-20%,-20%);
+          /*transform: translate(-20%,-20%);*/
 
 }
 	
@@ -42,9 +43,16 @@ div.pics{
 
 
 @foreach($pics as $pic)
+
 <div class="pics">
-<a target="BLANK" href="{{ url('/picture/'.$pic->id)}}">
+<h5 align="center">{{$pic->title}}</h5>
+<a href="{{ url('/picture/'.$pic->id)}}">
 <img src="{{ url('/storage/pics/' . $pic->pic)}}"></a>
+
+
+
+
+
 </div>
 @endforeach
 </div>

@@ -1,4 +1,3 @@
-
 @extends('layouts.main')
 @section('styles')
 <style>
@@ -15,21 +14,13 @@ th {
 }
 
  li {text-indent:-1px}
- .stripe-button
-{
-      padding: 10px 20px;
-      background-color: #333;
-      color: #f1f1f1;
-      border-radius: 0;
-      transition: .2s;
-  }
+
 
 </style>
 @stop
 @section('content')
-
 <div class="container">
-<div class="col-md-6 col-md-offset-3" style="background-color: #000; margin-top: 50px">
+<div class="col-md-6 col-md-offset-3" style="background-color: #000; margin-top: 50px; padding-bottom: 50px">
 	<h2>Contraband Cart</h2>
 	<table>
   <tr>
@@ -152,48 +143,22 @@ th {
   </tr>
 
 </table><br/>
-  </div>
-
-
-
-
-<div class="col-md-6 col-md-offset-3" style="background-color: #000; margin-top: 50px">
     <h2>Contraband Shipping Info</h2>
-{{Form::model($merch, ['method' => 'PATCH', 'action' => ['MerchandiseController@update', $merch->id]])}}
-    <div class="form-group">
-      {{Form::label('name', 'Name:')}}
-      {{Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Enter Name'])}}
-    </div>
-    <div class="form-group">
-      {{Form::label('street', 'Street Address:')}}
-      {{Form::text('street', null, ['class' => 'form-control', 'placeholder' => 'Enter Street Address'])}}
-    </div>
-    <div class="form-group">
-      {{Form::label('city', 'City:')}}
-      {{Form::text('city', null, ['class' => 'form-control', 'placeholder' => 'Enter City'])}}
-    </div>
-    <div class="form-group">
-      {{Form::label('state', 'State:')}}
-      {{Form::text('state', null, ['class' => 'form-control', 'placeholder' => 'Enter State'])}}
-    </div>
-    <div class="form-group">
-      {{Form::label('zip', 'Zip:')}}
-      {{Form::text('zip', null, ['class' => 'form-control', 'placeholder' => 'Enter Zip'])}}
-    </div>
-    <div class="form-group pull-right"  style="margin-top: 3em">
-      <a class="btn btn-secondary" href="{!! URL::previous() !!}">Back</a>
-      {{Form::submit('Buy Some Shit', ['class' => 'btn btn-primary', 'id' => 'customButton'])}}
-    </div>
-{{Form::close()}}
-</div>
-</div>
+    <h5>~ {{$merch->name}} ~</h5>
+    <h5>~ {{$merch->street}} ~</h5>
+    <h5>~ {{$merch->city}} ~</h5>
+    <h5>~ {{$merch->state}} ~</h5>
+    <h5>~ {{$merch->zip}} ~</h5>
+    
 
 
-{{-- Easy STRIPE SCRIpt
-<form action="/checkout" method="POST">
+
+
+  <form action="/checkout" method="POST" style="float: right">
 
 
 <input type=hidden name=totalshit value={{$total}}>
+<input type=hidden name="merchid" value={{$merch->id}}>
 
   {{csrf_field()}}
   <script  
@@ -205,80 +170,8 @@ th {
     data-image="{{url('img/jugnail.png')}}"
     data-locale="auto">
   </script>
-</form> --}}
-
-
-
-
-
-
-
-
-
-{{-- 
-
-
-
-<form id="checkout-form" action="/checkout" method="POST">
-  {{csrf_field()}}
-<input type=hidden name="totalshit" value={{$total}}>
-<input type=hidden name="merchid" value={{$merch->id}}>
-<input type=hidden name="stripeToken" id="stripeToken">
-<input type=hidden name="stripeEmail" id="stripeEmail">
-<input type=hidden name="stripeAddress_city" id="stripeAddress_city">
-    {{Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name'])}}
-
-  <div class="form-group pull-right"  style="margin-top: 3em">
-    <a class="btn btn-secondary" href="{!! URL::previous() !!}">Back</a>
-{{Form::submit('Buy Some Shit', ['class' => 'btn btn-primary', 'id' => 'customButton'])}}
-    {{Form::close()}}   
+</form> 
   </div>
 
-</form>
-
-
-<script src="https://checkout.stripe.com/checkout.js"></script>
-
-
-
-<script>
-var handler = StripeCheckout.configure({
-  key: '{{ config('services.stripe.key') }}',
-  image: '{{url('img/jugnail.png')}}',
-  locale: 'auto',
-  token: function(token, args) {
-    // You can access the token ID with `token.id`.
-    // Get the token ID to your server-side code for use.
-      document.querySelector('#stripeEmail').value = token.email;
-      document.querySelector('#stripeToken').value = token.id;
-
-
-      
-      document.querySelector('#checkout-form').submit();
-
-  }
-});
-
-document.getElementById('customButton').addEventListener('click', function(e) {
-  // Open Checkout with further options:
-  handler.open({
-    name: 'Contraband',
-    description: 'Checkout',
-    amount: "{{$total}}",
-    billingAddress: "true",
-    shippingAddress: "true"
-  });
-  e.preventDefault();
-});
-
-// Close Checkout on page navigation:
-window.addEventListener('popstate', function() {
-  handler.close();
-});
-</script> --}}
-
-
-
-
-
+  </div>
 @stop

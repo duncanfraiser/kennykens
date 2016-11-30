@@ -8,6 +8,7 @@ use Stripe\Stripe;
 use Stripe\Charge;
 use Stripe\Customer;
 
+
 class CheckoutController extends Controller
 {
     /**
@@ -41,7 +42,7 @@ class CheckoutController extends Controller
      */
     public function store(Request $request)
     {
-        // preform the charge
+
    
         Stripe::setApiKey(config('services.stripe.secret'));
 
@@ -56,7 +57,23 @@ class CheckoutController extends Controller
             'currency' => 'usd'
             ]);
 
-        return 'all done';
+
+
+       // preform the charge
+        // dd($request->route());
+                //     $this->validate($request,[
+                // 'name' => 'required'
+
+                // ]);
+        $merch = Merchandise::findorfail($request->merchid);
+        $merch->email = request('stripeEmail');
+        // $merch->fill($request->all());
+        $merch->save();
+        // dd($request->all());
+
+
+
+        return view('checkout.thanks', compact('merch'));
     }
 
     /**

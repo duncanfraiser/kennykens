@@ -71,7 +71,7 @@ class MerchandiseController extends Controller
         $merch->wxxxltotal = ($request['wxxxl'] * 13);
 
         $merch->save();
-
+        $merchid = $merch->id;
 
         return redirect('merchandise/'.$merch->id);
 
@@ -87,7 +87,7 @@ class MerchandiseController extends Controller
     public function show($id)
     {
         $merch = Merchandise::findorfail($id);
-        $total = $merch->total * 100;
+
         return view('merchandise.show', compact('merch', 'total'));
     }
 
@@ -111,8 +111,19 @@ class MerchandiseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $merch = Merchandise::findorfail($id);
+        $merch->fill($request->all());
+        $merch->save();
+        return redirect('merchandise/'.$merch->id.'/checkout');
     }
+
+    public function checkout(Request $request, $id)
+    {
+        $merch = Merchandise::findorfail($id);
+        $total = $merch->total * 100;
+        return view('merchandise.checkout', compact('merch', 'total'));
+    }
+
 
     /**
      * Remove the specified resource from storage.

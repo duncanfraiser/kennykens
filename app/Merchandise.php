@@ -9,6 +9,13 @@ class Merchandise extends Model
 {
 	use SoftDeletes;
     protected $fillable = [
+            
+            'name',
+            'email',
+            'street',
+            'city',
+            'state',
+            'zip',
             'album',
             'atotal',
             'bsmall',
