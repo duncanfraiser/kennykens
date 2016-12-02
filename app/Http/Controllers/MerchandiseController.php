@@ -114,7 +114,12 @@ class MerchandiseController extends Controller
         $merch = Merchandise::findorfail($id);
         $merch->fill($request->all());
         $merch->save();
-        return redirect('merchandise/'.$merch->id.'/checkout');
+        if($merch->status == 'shipped'){
+            return redirect('merchandise/orders');
+        }
+        else{
+            return redirect('merchandise/'.$merch->id.'/checkout');            
+        }
     }
 
     public function checkout(Request $request, $id)
@@ -133,6 +138,25 @@ class MerchandiseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $merch = Merchandise::findOrFail($id);
+        $merch->delete();
+        return redirect('/merchandise/orders');
+    }
+
+    public function orders(){
+        $orders = Merchandise::where('customerID','!=','')->where('status','pending')->get();
+        return view('merchandise.orders', compact('orders'));
+    }
+
+        public function shipped(){
+        $orders = Merchandise::where('customerID','!=','')->where('status','shipped')->get();
+        return view('merchandise.shipped', compact('orders'));
+    }
+
+
+
+    public function showorders($id){
+        $merch = Merchandise::findorfail($id);
+        return view('merchandise.showorders', compact('merch'));
     }
 }

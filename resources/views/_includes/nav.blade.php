@@ -47,10 +47,13 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                            <li><a href="/welcome/1/edit">Edit Bio</a></li>                 
-                            <li><a href="/event/create">Add Event</a></li>
-                            <li><a href="/book">Booking List</a></li>
-                            <li><a href="/picture/create">Add Picture</a></li>
+                            <li><a href="{{url('/welcome/1/edit')}}">Edit Bio</a></li>                 
+                            <li><a href="{{url('/event/create')}}">Add Event</a></li>
+                            <li><a href="{{url('/book')}}">Booking List</a></li>
+                            <li><a href="{{url('/picture/create')}}">Add Picture</a></li>
+                            <li><a href="{{url('/merchandise/orders')}}">Contraband Pending</a></li>
+                            <li><a href="{{url('/merchandise/shipped')}}">Contraband Shipped</a></li>
+
                                 <li>
                                     <a href="{{ url('/logout') }}"
                                         onclick="event.preventDefault();

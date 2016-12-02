@@ -45,7 +45,7 @@ class CheckoutController extends Controller
 
    
         Stripe::setApiKey(config('services.stripe.secret'));
-
+ 
         $customer = Customer::create([
             'email' => request('stripeEmail'),
             'source' => request('stripeToken')
@@ -57,19 +57,14 @@ class CheckoutController extends Controller
             'currency' => 'usd'
             ]);
 
+// dd($customer->id);
 
-
-       // preform the charge
-        // dd($request->route());
-                //     $this->validate($request,[
-                // 'name' => 'required'
-
-                // ]);
         $merch = Merchandise::findorfail($request->merchid);
         $merch->email = request('stripeEmail');
-        // $merch->fill($request->all());
+        // $merch->token = request('stripeToken');
+        $merch->customerID = $customer->id;
         $merch->save();
-        // dd($request->all());
+
 
 
 

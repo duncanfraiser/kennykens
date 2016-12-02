@@ -9,7 +9,8 @@ class Merchandise extends Model
 {
 	use SoftDeletes;
     protected $fillable = [
-            
+            'customerID',
+            'status',
             'name',
             'email',
             'street',

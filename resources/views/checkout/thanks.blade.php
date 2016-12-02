@@ -9,7 +9,7 @@
 </div>
 <h2>You just wait there with bells on sweetie, it's a comin'!</h2>
 <div>
-	<img src="{{url('img/jugnail.png')}}">
+	<a href="{{url('/')}}"><img src="{{url('img/jugnail.png')}}"></a>
 </div>
 </div>
 </div>

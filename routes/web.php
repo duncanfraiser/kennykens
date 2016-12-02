@@ -36,8 +36,15 @@ Route::get('book/{book}/thanks', 'BookController@thanks');
 
 Route::resource('fileuploads', 'FileuploadController');
 
+
+
+Route::get('merchandise/orders', 'MerchandiseController@orders');
+Route::get('merchandise/shipped', 'MerchandiseController@shipped');
 Route::resource('merchandise', 'MerchandiseController');
+Route::get('merchandise/{merchandise}/orders', 'MerchandiseController@showorders');
 Route::get('merchandise/{merchandise}/checkout', 'MerchandiseController@checkout');
+
+
 
 Route::resource('checkout', 'CheckoutController');
 
