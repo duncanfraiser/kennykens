@@ -28,11 +28,11 @@
 <!-- Container (Up Comming Event) -->
 <div class="tourDate">
     <div class="container">
-    <h3 class="text-center"><em><h2>~UP COMING EVENT~</h2>WHAT THE HELL HAPPENED TO COUNTRY?<br/>CD RELEASE PARTY</em></h3><br/>
+    <h3 class="text-center"><em><h2>~UP COMING EVENT~</h2>LIVE AT SAGEBRUSH CANTINA!<br/>12/17/16<br/><br/>WHAT THE HELL HAPPENED TO COUNTRY?<br/>CD AVAILABLE FOR PURCHASE IN<br/> <a href="{{url('/merchandise')}}">~CONTRABAND MERCANDISE~</a></em></h3><br/>
     <div class="row text-center">
     <div class="col-sm-6" style="background-color: #000">
     <div class="thumbnail">
-    <img src="img/poster.png" alt="Kenny Kens & The Brown Bottle Boys" width="400" height="300">
+    <img src="img/sagebrush.png" alt="Kenny Kens & The Brown Bottle Boys" width="400" height="300">
     </div>
     </div>
     <div class="col-sm-6">
