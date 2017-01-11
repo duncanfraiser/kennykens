@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Book;
-
+//test commint DELETE
 class BookController extends Controller
 {
         public function __construct(){
