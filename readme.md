@@ -1,27 +1,10 @@
-# Laravel PHP Framework
-
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+<h1>Kenny Kens $ the Brown Bottle Boys</h1>
+<a href="http://kennykens.com/">www.kennykens.com</a>
+<h3>100% PURE DETROIT HONKY TONK!</h3>
+<p>
+Kenny Kens first broke onto the music scene in 2003 forming The Cash Creek Band, and has enjoyed a cult following returning country music back to it's roots ever since. After moving down to Austin TX in 2013, Kenny Kens returned back to Detroit MI and retooled the band forming The Brown Bottle Boys. Soaking in all the honky tonk’s and dancehalls down in Austin, the music moved from a more Americana type of sound to steel guitar infused traditional country. Kenny Kens & The Brown Bottle Boys started writing and recording their own songs, and the formula worked! After performing their own sets of original honky tonk music all over Michigan, they hit the ground running and recorded their own full length album entitled “What The Hell Happened To Country?” released on the Ghettobilly label in 2016.
+<br/><br/>
+Not conforming to the latest craze of pop country, Kenny is bringing the music back home where it should be. He explains it like this: "I grew up watching my family pick and sing in rural Kentucky, and Tennessee. All those songs about pain, heartache love, and loss. That music is as real to me as this chair I'm sitting in. Now, I'm almost ashamed to say I play country music. There's no feel and no substance to it nowadays. I want to make music people can relate to. Not retro, but my own music that honors the traditions of Merle Haggard, Hank Williams and George Jones. Nashville has lost it’s soul, and I get sick of going to music venue’s and hearing these so called country acts pissing on the legacy built before us.”
+<br/><br/>
+You can catch them playing all over the Metro Detroit area in places such as Smalls, Freddy's Bar, The Machine Shop,  Linda Lou's and local area festivals . Kenny Kens & The Brown Bottle Boys blend of roots country music is bound to please even the most die hard country fan. This is one show you don’t want to miss!!
+</p>
