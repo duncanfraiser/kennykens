@@ -31,6 +31,8 @@ Route::resource('/video', 'VideoController');
 
 Route::resource('/press', 'PressController');
 
+Route::resource('/calendar', 'CalendarController');
+
 Route::resource('/book', 'BookController');
 Route::get('book/{book}/thanks', 'BookController@thanks');
 
