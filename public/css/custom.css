@@ -306,8 +306,8 @@ div.desc {
         -moz-background-size: cover !important;
         -o-background-size: cover !important;
         background-size: cover !important;
-        margin-top: 50px;
-        padding:50px;
+        margin-top: 30px;
+        padding:20px 50px 50px 50px;
         border: 1px solid #fff;
 
 }
