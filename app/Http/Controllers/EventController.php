@@ -17,8 +17,23 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::get();
- 		return view('event.index', compact('events'));
+        $client = new \Google_Client();
+        $client->setApplicationName("fuckingCal"); //DON'T THINK THIS MATTERS
+        $client->setDeveloperKey('AIzaSyAmzw374CJDnnmRhFCVnmG8bu3nFxkqwTg'); //GET AT AT DEVELOPERS.GOOGLE.COM
+        $cal = new \Google_Service_Calendar($client);
+        $calendarId = 'kmatzoll@gmail.com';
+        $params = array(
+            //CAN'T USE TIME MIN WITHOUT SINGLEEVENTS TURNED ON,
+            //IT SAYS TO TREAT RECURRING EVENTS AS SINGLE EVENTS
+            'singleEvents' => true,
+            'orderBy' => 'startTime',
+            );
+        //THIS IS WHERE WE ACTUALLY PUT THE RESULTS INTO A VAR
+        $events = $cal->events->listEvents($calendarId, $params); 
+        $calTimeZone = $events->timeZone; //GET THE TZ OF THE CALENDAR
+        date_default_timezone_set($calTimeZone);
+
+ 		return view('event.index', compact('events', 'calTimeZone'));
     }
 
     /**
