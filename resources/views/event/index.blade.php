@@ -2,7 +2,7 @@
 @section('content')
 <div class='container'>
     <div class="content" style="margin-top: 0px">
-    <div class="calDiv col-md-10 col-md-offset-1">
+    <div class="calDiv col-md-8 col-md-offset-2">
   
             <center><h1>Brown Bottle Event Calendar<br/><img src="{{url('img/jugnail.png')}}"></h1></center>
       
