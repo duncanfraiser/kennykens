@@ -15,7 +15,7 @@
 
   
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('css/custom.css') }}?1">
+  <link rel="stylesheet" href="{{ asset('css/custom.css') }}?2>
 
 {{--        <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"> --}}
 
