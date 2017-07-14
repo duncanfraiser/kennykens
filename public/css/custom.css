@@ -159,6 +159,7 @@ p {
 
 .navbar{
     min-height: 50px;
+    border-bottom: solid #fff 1px;
 }
   .navbar-brand{
     padding: 3px 20px;
@@ -457,16 +458,22 @@ margin: 0px;
   font-size: 90%;
   padding-top: 0px;
   padding-right: 15px;
-   margin: 2px;
+  margin: 2px;
 }
 
 .socialDiv img{
  height: 25px;
  width: 25px;
  margin: 2px;
+}
+
+@media only screen and (max-width: 770px) {
+.socialDiv{
+ float: left;
 
 }
 
+}
 
 @media only screen and (max-width: 770px) {
   .footsTitle {
@@ -496,9 +503,6 @@ margin: 0px;
   }
 }
 
-.tabber{
-  color: red
-}
 
 
 
@@ -508,9 +512,16 @@ margin: 0px;
   font-size: 90%;
 }
 
+@media only screen and (max-width: 770px) {
+  .copyInfo{
+  float: left;
+  font-size: 90%;
+  }
+}
 
-
-
+.tabInfo p{
+  float: left;
+}
 
 
 

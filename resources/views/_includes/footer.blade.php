@@ -28,7 +28,7 @@
 
 
 <div class="col-md-12">
-      <div class="tab-content col-md-6">
+      <div class="tab-content col-md-6 tabInfo">
         <div id="home" class="tab-pane fade in active">
           <p>Lead Vocals / Rhythm Guitar<br/>
           <button class="btn footsBtn" data-toggle="modal" data-target="#myModal">~Read Bio~</button></p>
