@@ -1,71 +1,111 @@
-<div class="footer" >
+<div class="footer container">
+  <h2 class="text-center footsTitle">~The Brown Bottle Boys~</h2>
 
-<div class="container" style="padding-bottom: 0px">
-<h1 class="text-center">The Brown Bottle Boys<br/></h1>
-      <div class="col-md-12" style="padding-bottom: 0px">
-     
 
-                <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab"   href="#home">Kenny Kens</a></li>
-                  <li><a data-toggle="tab" href="#menu1">Brian</a></li>
-                  <li><a data-toggle="tab" href="#menu2">Juan</a></li>
-                  <li><a data-toggle="tab" href="#menu3">Steve</a></li>
-                  <li><a data-toggle="tab" href="#menu4">Billy</a></li>
-                </ul>
- <div class="col-md-6">
-                <div class="tab-content">
-                  <div id="home" class="tab-pane fade in active">
-                    <h2>Kenny Kens</h2><p>Lead Vocals/Rhythm Guitar</p>
-                              <button class="btn" data-toggle="modal" data-target="#myModal">Read Bio</button>
-                  </div>
-                  <div id="menu1" class="tab-pane fade">
-                    <h2>Brian Coogan</h2><p>Lead Guitar/Backing Vocals</p>
-                    <button class="btn" data-toggle="modal" data-target="#myModal2">Read Bio</button>
-                  </div>
-                  <div id="menu2" class="tab-pane fade">
-                    <h2>Juan Carlos</h2><p>Drums</p>
-                    <button class="btn" data-toggle="modal" data-target="#myModal3">Read Bio</button>
-                  </div>
-                  <div id="menu3" class="tab-pane fade">
-                    <h2>Steve Wyse</h2><p>Upright Bass/Backing Vocals</p>
-                    <button class="btn" data-toggle="modal" data-target="#myModal4">Read Bio</button>
-                  </div>
-                  <div id="menu4" class="tab-pane fade">
-                    <h2>Billy Cole</h2><p>Pedal Steel</p>
-                    <button class="btn" data-toggle="modal" data-target="#myModal5">Read Bio</button>
-                  </div>
-                </div>
+
+
+
+
+
+    <div class="col-md-12" style="padding: 0px;">
+      <ul class="nav nav-tabs footsTab">
+        <li class="active tabber"><a data-toggle="tab"   href="#home">Kenny Kens</a></li>
+        <li><a data-toggle="tab" href="#menu1">Brian</a></li>
+        <li><a data-toggle="tab" href="#menu2">Juan</a></li>
+        <li><a data-toggle="tab" href="#menu3">Steve</a></li>
+        <li><a data-toggle="tab" href="#menu4">Billy</a></li>
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+      <div class="tab-content col-md-6">
+        <div id="home" class="tab-pane fade in active">
+          <p>Lead Vocals / Rhythm Guitar<br/>
+          <button class="btn footsBtn" data-toggle="modal" data-target="#myModal">~Read Bio~</button></p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <p>Lead Guitar / Backing Vocals<br/>
+          <button class="btn footsBtn" data-toggle="modal" data-target="#myModal2">~Read Bio~</button></p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <p>Drums<br/>
+          <button class="btn footsBtn" data-toggle="modal" data-target="#myModal3">~Read Bio~</button></p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+          <p>Upright Bass/Backing Vocals<br/>
+          <button class="btn footsBtn" data-toggle="modal" data-target="#myModal4">~Read Bio~</button></p>
+        </div>
+        <div id="menu4" class="tab-pane fade">
+          <p>Pedal Steel<br/>
+          <button class="btn footsBtn" data-toggle="modal" data-target="#myModal5">~Read Bio~</button></p>
+        </div>
       </div>
-       <div class="col-md-6">
 
 
 
 
-               
-                  <!-- Yield the slider if there is one -->
-                  <p style="padding: 25px 0 0 0; color: #fff; font-size: 15px" align="right">
-
-              <span style="padding-right: 6px">Follow us on social media!</span><br>
-              <a target="BLANK" title="Facebook" href="https://www.facebook.com/KennyKensBand/">
-              <img src="/img/facebook.png" width="35" height="35" />
-              </a>
-              <a target="Blank" title="Instagram" href="https://www.instagram.com/kenny.kens/?hl=en">
-              <img src="/img/instagram.png" width="35" height="35" />
-              </a>
-              <a target="BLANK" title="Reverb Nation" href="https://www.reverbnation.com/kennykensthecashcreekband">
-              <img src="/img/reverbnation.png" width="35" height="35" />
-              </a>
-              <a target="BLANK" title="Twitter" href="https://twitter.com/?lang=en">
-              <img src="/img/twitter.png" width="35" height="35" />
-              </a>
-              <a target="BLANK" title="You Tube" href="https://www.youtube.com/channel/UCTSkUmSQr8RzVgxODOy_bpA">
-              <img src="/img/youtube1.png" width="35" height="35" />
-              </a><br/><br/><br/><span style="color: #9d9d9d">&copy; 2016 Kenny Kens & The Brown Bottle Boys</span></p>
+    <div class="socialDiv">               
+      <p>Follow us on social media!</p>
+        <a class="socialImgs" target="BLANK" title="Facebook" href="https://www.facebook.com/KennyKensBand/"><img  src="/img/facebook.png"></a>
+        <a target="Blank" title="Instagram" href="https://www.instagram.com/kenny.kens/?hl=en"><img src="/img/instagram.png"></a>
+        <a target="BLANK" title="Reverb Nation" href="https://www.reverbnation.com/kennykensthecashcreekband"><img src="/img/reverbnation.png"></a>
+        <a target="BLANK" title="Twitter" href="https://twitter.com/?lang=en"><img src="/img/twitter.png"></a>
+        <a target="BLANK" title="You Tube" href="https://www.youtube.com/channel/UCTSkUmSQr8RzVgxODOy_bpA"><img src="/img/youtube1.png"></a>
     </div>
-    </div>
+
+
+
+</div>
+<div class="col-md-12">
+              <p class="copyInfo"> &copy;  <?php echo date("Y"); ?>  Kenny Kens & The Brown Bottle Boys</p>
 </div>
 
-<!-- Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
@@ -84,7 +124,9 @@
       </div>
     </div>
   </div>
-</div>
+</div> 
+
+
 
 <div class="modal fade" id="myModal2" role="dialog">
   <div class="modal-dialog">
@@ -164,4 +206,8 @@
       </div>
     </div>
   </div>
+</div>
+
+
+
 </div>

@@ -265,19 +265,47 @@ div.desc {
       height: 100%;
   }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: #fff;
+.nav-tabs>li.active>a{
+    color: red;
     cursor: default;
     background-color: #000;
     border: 1px solid #ddd;
     border-bottom-color: transparent;
 }
+/*.nav-tabs>li.active>a:focus{
+      background-color: red;
+}
+.nav-tabs>li.active>a:hover {
+      background-color: blue;
+}*/
+
+.nav-tabs>li.active>a:focus{
+      background-color: #000;
+      color: red;
+}
+.nav-tabs>li>a:hover {
+      background-color: transparent;
+    border: 1px solid transparent;
+
+
+}
+
+
 
 .nav-tabs>li>a {
     margin-right: 2px;
     line-height: 1.42857143;
     border: 1px solid transparent;
     border-radius: 0px 0px 0 0;
+}
+
+
+.dropdown-menu {
+  background-color: #000;
+}
+
+.dropdown-menu>li>a {
+  color: #fff;
 }
 
 .merch{
@@ -299,7 +327,17 @@ div.desc {
   height: 65%;
 }
 
-/*CALENDAR*/
+
+
+
+
+
+
+
+
+/*START CALENDAR*/
+
+
 .calDiv{
           background: url('../img/csa2.png') center center no-repeat fixed;
         -webkit-background-size: cover !important;
@@ -310,6 +348,36 @@ div.desc {
         padding:20px 50px 50px 50px;
         border: 1px solid #fff;
 
+
+}
+   @media only screen and (max-width: 770px) {
+    .calDiv{
+        font-size: .5em;
+        padding:10px;
+      }
+}
+
+  @media only screen and (max-width: 770px) {
+    h2{
+          font-size: 15px;
+      }
+}
+
+  @media only screen and (max-width: 770px) {
+    .bottle{
+          width: 15%;
+      }
+}
+
+
+.calTitle{
+ font-size: 35px
+}
+
+  @media only screen and (max-width: 770px) {
+    .calTitle{
+          font-size: 20px;
+      }
 }
 /*#calendar {
   color: #000;
@@ -327,3 +395,125 @@ div.desc {
 }
 
 
+.calContainer{
+  padding: 50px 10px;
+}
+
+  @media only screen and (max-width: 770px) {
+    .calContainer{
+         padding: 50px 5px 0px 5px;
+      }
+}
+
+/*END CALENDAR*/
+
+
+
+/*START FOOTER*/
+
+.footer{
+  padding: 0px;
+  margin: 10px 0px 10px 0px;
+/*
+border: solid red 1px;*/
+}
+
+.footer h2{
+margin: 0px;
+}
+
+
+
+  .footsBtn {
+      padding: 3px 3px;
+      background-color: #000;
+      color: #337ab7;
+      border-radius: 0;
+      transition: .2s;
+      border: solid 1px #337ab7;
+      margin-left: 0px;
+      margin-top: 3px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+.socialDiv{
+ float: right;
+/*     position: absolute;
+    right: 0px;*/
+/*    width: 300px;
+    border: 3px solid #73AD21;*/
+/*    padding: 10px;*/
+}
+.socialDiv p{
+  font-size: 90%;
+  padding-top: 0px;
+  padding-right: 15px;
+   margin: 2px;
+}
+
+.socialDiv img{
+ height: 25px;
+ width: 25px;
+ margin: 2px;
+
+}
+
+
+@media only screen and (max-width: 770px) {
+  .footsTitle {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .footsTitle{
+    font-size: 25px;
+  }
+}
+
+
+/*@media only screen and (max-width: 770px) {
+.nav-tabs li a {
+  font-size: 65%;
+  }
+}*/
+    .footsTab li a:hover{
+      color:#337ab7;
+    }
+
+@media only screen and (max-width: 770px) {
+  .footsTab li a{
+    padding:5px;
+    font-size: 65%;
+  }
+}
+
+.tabber{
+  color: red
+}
+
+
+
+.copyInfo{
+  color:#9d9d9d; 
+  float: right;
+  font-size: 90%;
+}
+
+
+
+
+
+
+
+
+
+/*END FOOTER*/

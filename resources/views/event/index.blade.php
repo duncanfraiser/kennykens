@@ -1,10 +1,10 @@
 @extends('layouts.main')
 @section('content')
-<div class='container'>
+<div class='container calContainer'>
     <div class="content" style="margin-top: 0px">
-    <div class="calDiv col-md-8 col-md-offset-2">
+    <div class="calDiv col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
   
-            <center><h1>Brown Bottle Event Calendar<br/><img src="{{url('img/jugnail.png')}}"></h1></center>
+            <center><p class="calTitle">Brown Bottle Event Calendar<br/><img class="bottle" src="{{url('img/jugnail.png')}}"></p></center>
       
         <div id='calendar'></div>
     </div>
